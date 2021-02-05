@@ -13,13 +13,15 @@ from random import randint
 
 
 # Begin your solution here...
-print ("Your fortune cookie says...")
-randNum = randint(1,100)
+print("Your fortune cookie says...")
+randNum = randint(1, 100)
 if randNum < 30:
     print("A beautiful, smart and loving person will be coming into your life.")
 else: 
     if randNum < 70:
         print("Your life will be happy and peaceful.")
-    elif randNum <= 100:
+    elif randNum <90:
         print("Soon life will become more interesting.")
+    elif randNum <100:
+        print("Beware the snakes in the grass.")
 print("Now, go spread positive vibes!")

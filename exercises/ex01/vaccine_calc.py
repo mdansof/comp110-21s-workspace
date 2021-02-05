@@ -18,21 +18,17 @@ from datetime import timedelta
 
 
 # Begin your solution here...
-population:int  = int(input("Population: "))
-dosesAdmin:int  = int(input("Doses administered: "))
-dosesDaily:int = int(input("Doses per day: "))
-perTarget:int = int(input("Target percent vaccinated: "))
+population: int = int(input("Population: "))
+dosesAdmin: int = int(input("Doses administered: "))
+dosesDaily: int = int(input("Doses per day: "))
+perTarget: int = int(input("Target percent vaccinated: "))
 
-totalDosesToGive = (population * (perTarget/100)) * 2
+totalDosesToGive = (population * (perTarget / 100)) * 2
 dosesLeft = totalDosesToGive - dosesAdmin
-daysLeft= round(dosesLeft/dosesDaily)
+daysLeft = round(dosesLeft / dosesDaily)
 
     
 today: datetime = datetime.today()
 enddate: timedelta = timedelta(daysLeft)
 future: datetime = today + enddate
-print("We will reach " + str(perTarget
-     ) + "% vaccination in "+ str(daysLeft) + " days, which falls on " + future.strftime("%B %d, %Y"))
-
-
-
+print("We will reach " + str(perTarget) + "% vaccination in " + str(daysLeft) + " days, which falls on " + future.strftime("%B %d, %Y"))
