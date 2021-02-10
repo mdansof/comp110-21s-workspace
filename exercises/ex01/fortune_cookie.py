@@ -20,8 +20,8 @@ if randNum < 30:
 else: 
     if randNum < 70:
         print("Your life will be happy and peaceful.")
-    elif randNum <90:
+    elif randNum < 90:
         print("Soon life will become more interesting.")
-    elif randNum <100:
+    elif randNum < 100:
         print("Beware the snakes in the grass.")
 print("Now, go spread positive vibes!")

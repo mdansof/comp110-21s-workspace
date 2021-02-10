@@ -8,9 +8,18 @@ userInput = input("Please enter an integer: ")
 userVal = int(userInput)
 if userVal % 2 == 0 and userVal % 7 == 0:
     print("TAR HEELS")
-elif userVal % 2 == 0:
-    print("TAR")
-elif userVal % 7 == 0:
-    print("HEELS")
+# elif userVal % 2 == 0:
+#     print("TAR")
+# elif userVal % 7 == 0:
+#     print("HEELS")
+# else:
+#     print("CAROLINA")
 else:
-    print("CAROLINA")
+    if userVal % 2 == 0:
+        print("Tar")
+    else:
+        if userVal % 7 == 0:
+            print("heels")
+        else:
+            print("caro")
+
